@@ -1,0 +1,9 @@
+micronaut:
+  application:
+    name: demo
+---
+redis:
+  uri: redis://localhost
+  caches:
+    sample-cache:
+      expire-after-write: 5m
