@@ -1,12 +1,8 @@
-## Micronaut 2.5.11 Documentation
+Start redis:
 
-- [User Guide](https://docs.micronaut.io/2.5.11/guide/index.html)
-- [API Reference](https://docs.micronaut.io/2.5.11/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/2.5.11/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
+docker run --rm --name my-redis -p 6379:6379 -d redis
+Run unit tests.
 
-## Feature http-client documentation
+Stop redis:
 
-- [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
-
+docker stop my-redis
